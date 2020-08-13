@@ -1,0 +1,1 @@
+$ADGuidUser = Get-ADUser -Filter * | Select Name,ObjectGUID | Sort-Object Name | Out-GridView -Title "Select Local AD User To Get Immutable ID for" -PassThru 
