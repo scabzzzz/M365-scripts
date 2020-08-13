@@ -5,3 +5,5 @@ $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri ht
 Import-PSSession $Session -DisableNameChecking
 
 Get-CASMailbox -Result Unlimited | Set-CASMailbox -MAPIEnabled $true
+
+Remove-PSSession $Session 
